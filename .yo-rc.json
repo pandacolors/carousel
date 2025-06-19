@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.16.0",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "carousel",
+    "libraryId": "fe3d2975-515f-408d-a32a-c8cc3be213c1",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "carousel",
+    "solutionShortDescription": "carousel description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
