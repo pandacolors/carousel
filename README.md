@@ -29,9 +29,10 @@ Carousel web part using react-slick
 
 ## Version history
 
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.0.0     | March 15, 2026 | Initial release |
+| Version | Date           | Comments        |
+| ------- | -------------- | --------------- |
+| 1.0.1   | March 23, 2026 | Prod release    |
+| 1.0.0   | March 15, 2026 | Initial release |
 
 ## Disclaimer
 
@@ -45,7 +46,6 @@ Carousel web part using react-slick
 - Ensure that you are at the solution folder
 - in the command-line run:
   - **npm install**
-
 
 > Include any additional steps as needed.
 
