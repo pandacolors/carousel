@@ -1,9 +1,9 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "carousel-client-side-solution",
+    "name": "carousel-solution",
     "id": "fe3d2975-515f-408d-a32a-c8cc3be213c1",
-    "version": "1.0.0.0",
+    "version": "1.0.1.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
@@ -16,10 +16,10 @@
     },
     "metadata": {
       "shortDescription": {
-        "default": "carousel description"
+        "default": "carousel short description"
       },
       "longDescription": {
-        "default": "carousel description"
+        "default": "carousel long description"
       },
       "screenshotPaths": [],
       "videoUrl": "",
