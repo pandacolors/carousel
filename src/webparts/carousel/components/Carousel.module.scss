@@ -5,18 +5,11 @@
   padding: 1em;
   color: "[theme:bodyText, default: #323130]";
   color: var(--bodyText);
-  &.teams {
-    font-family: $ms-font-family-fallbacks;
-  }
+  background-color: $ms-color-greenLight;
 }
 
-.welcome {
+.box {
   text-align: center;
-}
-
-.welcomeImage {
-  width: 100%;
-  max-width: 420px;
 }
 
 .links {

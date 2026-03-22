@@ -2,13 +2,13 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Carousel web part using react-slick
 
 [picture of the solution in action, if possible]
 
 ## Used SharePoint Framework Version
 
-![version](https://img.shields.io/badge/version-1.21.1-green.svg)
+![version](https://img.shields.io/badge/version-1.22.2-green.svg)
 
 ## Applies to
 
@@ -31,8 +31,7 @@ Short summary on functionality and used technologies.
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| 1.0.0     | March 15, 2026 | Initial release |
 
 ## Disclaimer
 
@@ -46,7 +45,7 @@ Short summary on functionality and used technologies.
 - Ensure that you are at the solution folder
 - in the command-line run:
   - **npm install**
-  - **gulp serve**
+
 
 > Include any additional steps as needed.
 
