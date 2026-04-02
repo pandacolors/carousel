@@ -8,6 +8,7 @@ var sp_property_pane_1 = require("@microsoft/sp-property-pane");
 var sp_webpart_base_1 = require("@microsoft/sp-webpart-base");
 var strings = tslib_1.__importStar(require("CarouselWebPartStrings"));
 var Carousel_1 = tslib_1.__importDefault(require("./components/Carousel"));
+var sp_loader_1 = require("@microsoft/sp-loader");
 var CarouselWebPart = /** @class */ (function (_super) {
     tslib_1.__extends(CarouselWebPart, _super);
     function CarouselWebPart() {
@@ -26,9 +27,15 @@ var CarouselWebPart = /** @class */ (function (_super) {
     };
     CarouselWebPart.prototype.onInit = function () {
         var _this = this;
-        return this._getEnvironmentMessage().then(function (message) {
+        sp_loader_1.SPComponentLoader.loadCss('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+        sp_loader_1.SPComponentLoader.loadCss('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+        this._getEnvironmentMessage().then(function (message) {
             _this._environmentMessage = message;
-        });
+        }).catch(function (err) { return console.error("Error:", err); });
+        return _super.prototype.onInit.call(this);
+        /*     return this._getEnvironmentMessage().then(message => {
+              this._environmentMessage = message;
+            }); */
     };
     CarouselWebPart.prototype._getEnvironmentMessage = function () {
         var _this = this;
