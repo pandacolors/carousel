@@ -39,7 +39,8 @@ export default class CarouselWebPart extends BaseClientSideWebPart<ICarouselWebP
     SPComponentLoader.loadCss('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
     SPComponentLoader.loadCss('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
     this._getEnvironmentMessage().then(message => {
-      this._environmentMessage = message;})
+      this._environmentMessage = message;
+    }).catch(err => console.error("Error:", err));
     return super.onInit();
 /*     return this._getEnvironmentMessage().then(message => {
       this._environmentMessage = message;

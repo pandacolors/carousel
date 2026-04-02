@@ -31,7 +31,7 @@ var CarouselWebPart = /** @class */ (function (_super) {
         sp_loader_1.SPComponentLoader.loadCss('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
         this._getEnvironmentMessage().then(function (message) {
             _this._environmentMessage = message;
-        });
+        }).catch(function (err) { return console.error("Error:", err); });
         return _super.prototype.onInit.call(this);
         /*     return this._getEnvironmentMessage().then(message => {
               this._environmentMessage = message;
