@@ -11,6 +11,7 @@ import { IReadonlyTheme } from '@microsoft/sp-component-base';
 import * as strings from 'CarouselWebPartStrings';
 import Carousel from './components/Carousel';
 import { ICarouselProps } from './components/ICarouselProps';
+import { SPComponentLoader } from '@microsoft/sp-loader';
 
 export interface ICarouselWebPartProps {
   description: string;
@@ -35,9 +36,14 @@ export default class CarouselWebPart extends BaseClientSideWebPart<ICarouselWebP
   }
 
   protected onInit(): Promise<void> {
-    return this._getEnvironmentMessage().then(message => {
+    SPComponentLoader.loadCss('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+    SPComponentLoader.loadCss('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+    this._getEnvironmentMessage().then(message => {
+      this._environmentMessage = message;})
+    return super.onInit();
+/*     return this._getEnvironmentMessage().then(message => {
       this._environmentMessage = message;
-    });
+    }); */
   }
 
 
