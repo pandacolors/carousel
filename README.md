@@ -23,6 +23,7 @@ Carousel web part using react-slick
 
 | Version | Date           | Comments            |
 | ------- | -------------- | ------------------- |
+| 1.0.3 | Sep 9, 2026 | Updated yaml |
 | 1.0.2   | March 29, 2026 | Install react-slick |
 | 1.0.1   | March 23, 2026 | Prod release        |
 | 1.0.0   | March 15, 2026 | Initial release     |
