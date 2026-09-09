@@ -34,12 +34,12 @@ jobs:
         run: |
           npm run build
       - name: CLI for Microsoft 365 Login
-        uses: pnp/action-cli-login@latest
+        uses: pnp/action-cli-login@v4.0.0
         with:
           APP_ID: ${{ secrets.M365_CICD_APP_CLIENTID }}
           TENANT: ${{ secrets.TENANT_ID }}
       - name: CLI for Microsoft 365 Deploy App
-        uses: pnp/action-cli-deploy@latest
+        uses: pnp/action-cli-deploy@v6.0.0
         with:
           APP_FILE_PATH: sharepoint/solution/carousel.sppkg
           SKIP_FEATURE_DEPLOYMENT: false
